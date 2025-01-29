@@ -1,0 +1,101 @@
+
+
+  .open {
+    
+    border:0;
+
+    background-color: inherit;
+    color:blue;
+    text-decoration: underline;
+
+}
+
+.modal::backdrop {
+    background-color: rgb(0 0 0 / 0.7 );
+}
+
+form{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.signup__label {
+    display: flex;
+    flex-direction: row;
+    /* margin-bottom: 1rem; */
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+label:first-of-type {
+    margin-top: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.signup__error--email:empty {
+    border: none;
+    margin: 0;
+    display: none;
+
+}
+
+.signup__error--confirm:empty {
+    border: none;
+    margin: 0;
+    display: none;
+
+}
+
+
+.signup__error {
+    border: 1px solid red;
+    margin-top: 4px;
+    background-color: #ff333333;
+}
+
+.name-form__error {
+    border: 1px solid red;
+    margin-top: 4px;
+    background-color: #ff333333;
+}
+
+.name-form__error--first-name:empty {
+    border: none;
+    margin: 0;
+    display: none;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.signup__submit {
+    font-size: 1.2rem;
+    background-color: lime;
+    border-radius: 1rem;
+}
+
+.close {
+    font-size: 1.2rem;
+    background-color: lightcoral;
+    border-radius: 1rem;
+}
+
+.asm-onlineform-tooltip {
+    display: block;
+    font-size: 80%;
+    opacity: 0.7;
+    text-align: justify;
+
+}
+

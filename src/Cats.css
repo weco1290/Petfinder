@@ -1,0 +1,26 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+
+    padding: 1rem;
+
+    /*align-items: end;*/
+}
+
+@media (max-width: 40rem) { 
+    #container {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.card {
+    grid-column: span 4;
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+    text-align: center;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+}
+

@@ -1,0 +1,39 @@
+.header {
+  display: grid;
+  grid-template-areas:
+    "header-logo header-title"
+    "header-nav header-nav";
+  grid-template-columns: auto 1fr;
+
+  background-color: white;
+
+  position: sticky;
+  top: 0px;
+}
+
+.header__logo {
+  grid-area: header-logo;
+  width: 100px;
+}
+
+.header__title {
+  grid-area: header-title;
+
+  text-align: center;
+}
+
+.header__nav {
+  grid-area: header-nav;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+
+@media (max-width: 40rem) {
+  .flex {
+    display: grid;
+    grid-template-columns: none;
+  }
+}

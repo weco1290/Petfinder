@@ -1,0 +1,8 @@
+.skiplink {
+  position: absolute;
+  right: -100000px;
+}
+
+.skiplink:focus {
+  right: 0px;
+}

@@ -1,0 +1,28 @@
+.main {
+    padding: 1rem;
+  }
+
+.panel-container.news {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  background: #fff;
+  box-shadow: 0 5px 17px 1px rgba(0,0,0,.2);
+}
+
+.panel-image-left {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  line-height: 0;
+
+  width: 50%;
+}
+
+.news-events__meta {
+  display: block;
+  font-size: .85em;
+  font-weight: 700;
+  text-transform: uppercase;
+}

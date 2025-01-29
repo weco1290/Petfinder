@@ -1,0 +1,38 @@
+.expand {
+    border: 1px solid black;
+  }
+  
+  /* .expand:last-of-type { */
+  /*   border-bottom: 1px solid black; */
+  /* } */
+  
+  .expand + .expand {
+    border-top: none;
+  }
+  
+  .expand__title {
+    display: flex;
+    justify-content: space-between;
+  
+    border: none;
+    width: 100%;
+  
+    background-color: transparent;
+  
+    font: inherit;
+    font-size: 1.1rem;
+    cursor: pointer;
+  
+  }
+  
+  .expand__title[aria-expanded=true] {
+    border-bottom: 1px solid black;
+  }
+  
+  .expand__title[aria-expanded=false]::after {
+    content: '+';
+  }
+  
+  .expand__title[aria-expanded=true]::after {
+    content: '-';
+  }
